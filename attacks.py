@@ -1,4 +1,6 @@
 import torch
+
+# https://www.kaggle.com/code/alexine/adversarial-attacks/notebook#Attacks
 def fgsm_attack(x_original, epsilon, gradient):
     # Get Gradient sign
     grad_sign = gradient.sign()
